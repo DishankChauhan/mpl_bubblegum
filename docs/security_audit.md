@@ -1,6 +1,5 @@
 # Security Audit Report
-Created by: DishankChauhan
-Last Updated: 2025-03-08 17:03:13 UTC
+
 
 ## Overview
 This document outlines the security audit findings for the MPL-Bubblegum Elixir NIFs implementation.

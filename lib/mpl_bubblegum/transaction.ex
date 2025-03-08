@@ -1,8 +1,7 @@
 defmodule MplBubblegum.Transaction do
   @moduledoc """
   Handles transaction signing and submission for MPL-Bubblegum operations.
-  Created by: DishankChauhan
-  Last Updated: 2025-03-08 16:57:10 UTC
+  
   """
 
   require Logger

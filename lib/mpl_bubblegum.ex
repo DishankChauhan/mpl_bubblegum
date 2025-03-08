@@ -3,8 +3,7 @@ defmodule MplBubblegum do
   MPL-Bubblegum integration for Elixir.
   Implements compressed NFT operations on Solana using the MPL-Bubblegum protocol.
 
-  Created by: DishankChauhan
-  Last Updated: 2025-03-08
+  
   """
 
   use Rustler, otp_app: :mpl_bubblegum, crate: "mpl_bubblegum"

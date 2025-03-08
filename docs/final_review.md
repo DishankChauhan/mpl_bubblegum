@@ -1,6 +1,5 @@
 # MPL-Bubblegum Final Review
-Created by: DishankChauhan
-Last Updated: 2025-03-08 17:07:08 UTC
+
 
 ## Project Overview
 MPL-Bubblegum is an Elixir implementation of Solana's compressed NFT protocol using Rust NIFs. The project provides a complete solution for creating, managing, and transferring compressed NFTs on Solana.

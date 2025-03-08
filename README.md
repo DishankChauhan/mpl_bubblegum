@@ -1,6 +1,5 @@
 # MPL-Bubblegum Elixir Integration
-Created by: DishankChauhan
-Last Updated: 2025-03-08 17:19:14 UTC
+
 
 ## Overview
 A Rust NIF implementation for Solana's MPL-Bubblegum compressed NFT protocol in Elixir. This library provides functionality for creating, minting, and managing compressed NFTs on Solana.

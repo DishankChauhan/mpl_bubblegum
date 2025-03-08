@@ -1,8 +1,6 @@
 defmodule MplBubblegum.Benchmark do
   @moduledoc """
-  Benchmark tests for MPL-Bubblegum operations.
-  Created by: DishankChauhan
-  Last Updated: 2025-03-08 16:47:35 UTC
+  
   """
 
   def run_benchmarks do

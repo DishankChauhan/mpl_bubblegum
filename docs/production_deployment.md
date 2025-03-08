@@ -1,6 +1,5 @@
 # MPL-Bubblegum Production Deployment Guide
-Created by: DishankChauhan
-Last Updated: 2025-03-08 17:07:08 UTC
+
 
 ## Prerequisites
 - Elixir 1.14+

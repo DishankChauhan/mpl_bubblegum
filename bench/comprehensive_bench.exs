@@ -1,8 +1,7 @@
 defmodule MplBubblegum.ComprehensiveBench do
   @moduledoc """
   Comprehensive benchmarks for MPL-Bubblegum operations.
-  Created by: DishankChauhan
-  Last Updated: 2025-03-08 16:57:10 UTC
+  
   """
 
   alias MplBubblegum.Devnet

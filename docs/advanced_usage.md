@@ -1,6 +1,5 @@
 # MPL-Bubblegum Advanced Usage Guide
-Created by: DishankChauhan
-Last Updated: 2025-03-08 17:03:13 UTC
+
 
 ## Performance Optimization Guidelines
 

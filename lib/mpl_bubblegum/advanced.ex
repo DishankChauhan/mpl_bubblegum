@@ -1,8 +1,7 @@
 defmodule MplBubblegum.Advanced do
   @moduledoc """
   Advanced features for MPL-Bubblegum operations.
-  Created by: DishankChauhan
-  Last Updated: 2025-03-08 17:13:07 UTC
+
   """
 
   alias MplBubblegum.{Transaction, Error}

@@ -1,8 +1,7 @@
 defmodule MplBubblegum.Devnet do
   @moduledoc """
   Provides devnet-specific functionality for testing and development.
-  Created by: DishankChauhan
-  Last Updated: 2025-03-08 16:57:10 UTC
+  
   """
 
   require Logger

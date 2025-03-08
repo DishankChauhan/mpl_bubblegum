@@ -1,8 +1,7 @@
 defmodule MplBubblegum.TransactionMonitor do
   @moduledoc """
   Monitors and retries Solana transactions.
-  Created by: DishankChauhan
-  Last Updated: 2025-03-08 17:13:07 UTC
+
   """
 
   require Logger
