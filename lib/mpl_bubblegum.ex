@@ -69,4 +69,11 @@ defmodule MplBubblegum do
   @spec transfer_compressed_nft(String.t(), String.t(), String.t()) :: {:ok, String.t()} | {:error, String.t()}
   def transfer_compressed_nft(_nft_address, _from, _to),
     do: :erlang.nif_error(:nif_not_loaded)
+     # TODO: Add retry mechanism for failed transactions
+  
+  # FIXME: Memory leak in large batch operations
+  
+  # NOTE: Might need to adjust these values based on network conditions
+  @default_timeout 30_000
+  @max_retries 3
 end

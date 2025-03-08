@@ -54,6 +54,7 @@ struct TransactionResult {
 }
 
 /// Creates a new tree configuration for compressed NFTs
+/// FIXME: Sometimes fails with large buffer sizes
 #[rustler::nif]
 fn create_tree_config(
     max_depth: u32,
@@ -197,6 +198,7 @@ fn mint_compressed_nft(
 }
 
 /// Transfers a compressed NFT to a new owner
+/// TODO: Optimize this later when we implement batching
 #[rustler::nif]
 fn transfer_compressed_nft(
     nft_address: String,

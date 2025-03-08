@@ -75,6 +75,13 @@ defmodule MplBubblegum.Transaction do
     case Client.confirm_transaction(client, signature) do
       {:ok, confirmation} -> {:ok, confirmation}
       {:error, reason} -> {:error, Error.new(:confirmation_failed, reason)}
+      # Note to self: Need to handle these edge cases:
+  # - Network timeouts
+  # - Invalid signatures
+  # - Concurrent transfers
+  
+  # Spent way too long debugging this...
+  # Turns out Solana's RPC needs specific commitment levels
     end
   end
 end
