@@ -1,0 +1,49 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Build and test
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Elixir
+      uses: erlef/setup-beam@v1
+      with:
+        elixir-version: '1.14.0'
+        otp-version: '25.0'
+        
+    - name: Set up Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        
+    - name: Install dependencies
+      run: |
+        mix deps.get
+        mix compile
+        
+    - name: Run tests
+      run: mix test
+      
+    - name: Run benchmarks
+      run: mix run bench/bubblegum_bench.exs
+      
+    - name: Check formatting
+      run: mix format --check-formatted
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Deploy to hex.pm
+      run: echo "Add hex.pm deployment steps here"

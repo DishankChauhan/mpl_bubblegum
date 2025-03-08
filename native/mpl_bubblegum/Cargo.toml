@@ -1,0 +1,40 @@
+[package]
+name = "mpl_bubblegum"
+version = "0.1.0"
+edition = "2021"
+authors = ["DishankChauhan"]
+description = "Rust NIFs for MPL-Bubblegum Elixir integration"
+license = "MIT"
+repository = "https://github.com/dishankchauhan/mpl_bubblegum"
+build = "build.rs"
+
+[lib]
+name = "mpl_bubblegum"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.29.1"
+mpl-bubblegum = { version = "1.0.0" }
+solana-program = "1.16"
+solana-sdk = "1.16"
+anchor-lang = "0.28.0"
+bytemuck = { version = "1.13", features = ["derive"] }
+num-derive = "0.4"
+num-traits = "0.2"
+borsh = "0.10"
+thiserror = "1.0"
+
+[build-dependencies]
+rustler = "0.29.1"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[features]
+default = ["solana"]
+solana = []
+
+[[bench]]
+name = "nft_operations"
+harness = false

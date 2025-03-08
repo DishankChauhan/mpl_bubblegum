@@ -1,0 +1,27 @@
+# Elixir
+/_build/
+/cover/
+/deps/
+/doc/
+/.fetch
+erl_crash.dump
+*.ez
+mpl_bubblegum-*.tar
+/priv/native/
+
+# Rust
+/native/*/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Mac
+.DS_Store
+
+# Environment variables
+.env
+.env.*
